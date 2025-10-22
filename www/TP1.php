@@ -122,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { // formulaire soumis
             $mail->isHTML(true);
             $mail->Subject = 'Incription confirmée ';
             $mail->Body = "
-            <p>(et donc jai les points bonus :) ?? )</p> ";
+            <p>votre inscription a été confirmée </p> ";
             $mail->send();
             $success = "Inscription réussie, tu as reçu un mail de confirmation";
 
@@ -275,5 +275,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { // formulaire soumis
     </form>
 
 </body>
+
 
 </html>
